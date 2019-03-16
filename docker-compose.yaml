@@ -9,7 +9,7 @@ services:
        MONGO_INITDB_ROOT_USERNAME: root
        MONGO_INITDB_ROOT_PASSWORD: root
     volumes:
-      - db-data : /data/db
+      - ./db:/data/db
     networks:
       - backend
   #Create proxy server
@@ -33,7 +33,7 @@ services:
       - frontend
 volumes:
   db-data:
-    
+
 networks:
   frontend:
     name: frontend-network
