@@ -11,11 +11,3 @@ RUN cd /usr/src/mongografanaproxy
 RUN npm install
 
 ENTRYPOINT ["npm","run","server"]
-
-#creating the grafana base image
-
-FROM grafana/grafana
-
-COPY . /var/lib/grafana/plugins/mongodb-grafana
-
-EXPOSE 3000
