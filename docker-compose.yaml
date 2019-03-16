@@ -6,8 +6,8 @@ services:
     image: mongo
     restart: always
     environment:
-       MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER}
-       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
+       MONGO_INITDB_ROOT_USERNAME: root
+       MONGO_INITDB_ROOT_PASSWORD: root
     volumes:
       - ${DB_PATH}: /data/db
     networks:
@@ -36,4 +36,4 @@ networks:
     name: frontend-network
   backend:
     name: backend-network
-    internal: true      
+    internal: true
