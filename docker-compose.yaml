@@ -16,7 +16,7 @@ services:
   mongo-proxy:
     build:
       context: .
-      dockerfile: proxy/dockerfile
+      dockerfile: proxy/Dockerfile
     restart: always
     networks:
       - backend
@@ -24,7 +24,7 @@ services:
   grafana:
     build:
       context: .
-      dockerfile: grafana/dockerfile
+      dockerfile: grafana/Dockerfile
     restart: always
     ports:
       - 3000:3000
