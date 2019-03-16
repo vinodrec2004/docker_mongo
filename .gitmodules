@@ -1,0 +1,3 @@
+[submodule "mongodb-grafana"]
+	path = mongodb-grafana
+	url = https://github.com/JamesOsgood/mongodb-grafana.git
