@@ -32,7 +32,8 @@ services:
       - backend
       - frontend
 volumes:
-  db-data:
+  - db-data:
+  - ./mongodb-grafana:/var/lib/grafana/plugins/mongodb-grafana
 
 networks:
   frontend:
